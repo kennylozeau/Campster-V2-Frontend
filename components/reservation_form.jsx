@@ -2,7 +2,7 @@ import React from 'react';
 import { withRouter } from 'react-router-dom';
 import 'react-dates/initialize';
 import 'react-dates/lib/css/_datepicker.css';
-import '../../app/assets/stylesheets/datepicker_override.css'
+import '/stylesheets/datepicker_override.css'
 import { SingleDatePicker } from 'react-dates';
 import { throws } from 'assert';
 

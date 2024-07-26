@@ -19,6 +19,7 @@ const receiveCampsite = payload => {
 
 export const fetchCampsites = filters => dispatch => {
   return CampsiteApiUtils.fetchCampsites(filters)
+    .then(res => res.json())
     .then(campsites => dispatch(receiveCampsites(campsites)))
       // errMsg => dispatch(receiveErrors(errMsg.responseJSON)))
 };

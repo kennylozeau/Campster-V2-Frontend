@@ -1,9 +1,9 @@
 const path = require('path');
 
 module.exports = {
-  entry: './frontend/campster.jsx',
+  entry: './campster.jsx',
   output: {
-    path: path.resolve(__dirname, 'app', 'assets', 'javascripts'),
+    path: path.resolve(__dirname, 'javascripts'),
     filename: 'bundle.js'
   },
   module: {
