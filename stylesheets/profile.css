@@ -1,0 +1,109 @@
+.profile-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 700px;
+}
+
+.profile-panels {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 45px auto;
+  margin-top: 55px;
+  width: 80%;
+}
+
+.side-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 2;
+}
+
+.user-panel {
+  height: 250px;
+  width: 225px;
+  margin: 10px;
+  border: 1px solid rgb(235, 235, 235);
+  border-radius: 2px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.user-panel > h1 {
+  font-size: 20px;
+}
+
+.user-panel > h3 {
+  margin-top: 15px;
+}
+
+.campster-cash-panel {
+  height: 50px;
+  width: 225px;
+  margin: 10px;
+  border: 1px solid rgb(235, 235, 235);
+  border-radius: 2px;
+}
+
+.main-pane-tabs-btns {
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+  margin: 10px;
+}
+
+.main-pane-tabs-btns > button {
+  color: #333333;
+  font-size: 20px;
+  padding: 0;
+  padding-bottom: 5px;
+  margin-right: 24px;
+  border: none;
+  border-bottom: 2px solid white;
+  transition: border-bottom 0.2s ease-in-out 0s;
+}
+
+
+.main-pane-tabs-btns > button:hover {
+  border-bottom: 2px solid #40d9ac;
+}
+
+.main-pane {
+  padding: 10px;
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+  overflow: scroll;
+}
+
+.main-pane-content {
+  list-style: none;
+}
+
+.reservation-list-item {
+  margin: 10px;
+  padding: 5px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid lightgrey;
+  cursor: pointer;
+}
+
+.reservation-list-item:last-child {
+  border-bottom: 0px;
+}
+
+.reservation-list-item > h1 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.reservation-list-item > h2 {
+  margin-bottom: 10px;
+}
+
+.reservation-list-item > h3 {
+  font-size: 16px;
+  font-weight: 600;
+}
