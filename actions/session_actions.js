@@ -33,12 +33,14 @@ const receiveErrors = errors => {
 
 export const signup = user => dispatch => {
   return SessionApiUtils.signup(user)
+    .then(res => res.json())
     .then(user => dispatch(receiveCurrentUser(user)),
       errMsg => dispatch(receiveErrors(errMsg.responseJSON)))
 }
 
 export const login = user => dispatch => {
   return SessionApiUtils.login(user)
+    .then(res => res.json())
     .then(user => dispatch(receiveCurrentUser(user)),
       errMsg => dispatch(receiveErrors(errMsg.responseJSON)))
 }
@@ -46,12 +48,14 @@ export const login = user => dispatch => {
 // JUST ADDED THE ERROR REJECTION 12-13 9:30pm, REMOVE IF LOSS OF FUNCTIONALITY
 export const logout = () => dispatch => {
   return SessionApiUtils.logout()
+    .then(res => res.json())
     .then(() => dispatch(logoutCurrentUser()),
       errMsg => dispatch(receiveErrors(errMsg.responseJSON)))
 }
 
 export const fetchUser = userId => dispatch => {
   return SessionApiUtils.fetchUser(userId)
+    .then(res => res.json())
     .then(user => dispatch(receiveCurrentUser(user)),
       errMsg => dispatch(receiveErrors(errMsg.responseJSON)))
 }

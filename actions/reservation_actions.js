@@ -27,6 +27,7 @@ const removeReservation = reservationId => {
 
 export const fetchReservations = () => dispatch => {
   return ReservationApiUtils.fetchReservations()
+    .then(res => res.json())
     .then(reservations => dispatch(receiveAllReservations(reservations)))
       // errMsg => dispatch(receiveErrors(errMsg.responseJSON)))
 };

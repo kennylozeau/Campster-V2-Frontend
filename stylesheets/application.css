@@ -26,6 +26,20 @@
  *= require_self
  */
 
+ @import url("campsite_index.css");
+ @import url("campsite_show.css");
+ @import url("datepicker_override.css");
+ @import url("discover.css");
+ @import url("footer.css");
+ @import url("modal.css");
+ @import url("nav.css");
+ @import url("profile.css");
+ @import url("reservation_form.css");
+ @import url("reset.css");
+ @import url("review.css");
+ @import url("sandbox.css");
+ @import url("search_bar.css");
+
 body {
   /* font-family: Helvetica, sans-serif; */
   font-family: 'Archivo', sans-serif;

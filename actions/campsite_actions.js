@@ -26,6 +26,7 @@ export const fetchCampsites = filters => dispatch => {
 
 export const fetchCampsite = (campsiteId) => dispatch => {
   return CampsiteApiUtils.fetchCampsite(campsiteId)
+    .then(res => res.json())
     .then(campsite => dispatch(receiveCampsite(campsite)))
   // errMsg => dispatch(receiveErrors(errMsg.responseJSON)))
 };

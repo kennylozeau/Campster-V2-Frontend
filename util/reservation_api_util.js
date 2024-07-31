@@ -1,9 +1,12 @@
 export const fetchReservations = () => {
-  return $.ajax({
-    method: 'GET',
-    url: '/api/reservations',
-    error: (err) => console.log(err)
-  });
+  return fetch(`http://127.0.0.1:3000/api/reservations`, {
+    error: err => console.log(err)
+  })
+  // return $.ajax({
+  //   method: 'GET',
+  //   url: '/api/reservations',
+  //   error: (err) => console.log(err)
+  // });
 };
 
 export const createReservation = reservation => {

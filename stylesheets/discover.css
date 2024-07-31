@@ -31,7 +31,7 @@
   height: 800px;
   padding: 15px 15px 0;
   margin: auto;
-  overflow: scroll;
+  overflow: auto;
 }
 
 .discover-map-container {

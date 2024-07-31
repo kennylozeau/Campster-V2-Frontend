@@ -73,7 +73,7 @@
   padding: 10px;
   grid-column: 2 / span 1;
   grid-row: 2 / span 1;
-  overflow: scroll;
+  overflow: auto;
 }
 
 .main-pane-content {
