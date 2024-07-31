@@ -16,7 +16,7 @@ const CampsiteIndex = () => {
   const dispatch = useDispatch()
 
   useEffect(() => {
-    console.warn('NO-DATA CHECK!\nCampsite index was converted to hook without data to check it!\nThus you should double check it when we have data!')
+    console.warn('NO-DATA CHECK!\nCampsiteIndex was converted to hook without data to check it!\nThus you should double check it when we have data!')
     const dispatchFetch = async () => {
       dispatch(await fetchCampsites())
     }
