@@ -1,5 +1,5 @@
 import React from 'react';
-import CampsiteIndexItem from './campsite_index_item';
+import CampsiteIndexItem from '../campsite_index/campsite_index_item';
 
 class DiscoverIndex extends React.Component {
   constructor(props) {

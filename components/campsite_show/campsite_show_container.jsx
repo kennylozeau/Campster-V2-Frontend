@@ -1,8 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import CampsiteShow from './campsite_show';
-import { fetchCampsite } from '../actions/campsite_actions';
-import { fetchReservations } from '../actions/reservation_actions';
+import { fetchCampsite } from '../../actions/campsite_actions';
+import { fetchReservations } from '../../actions/reservation_actions';
 
 const mapStateToProps = (state, ownProps) => {
   return {

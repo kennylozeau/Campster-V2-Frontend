@@ -1,6 +1,6 @@
 import React from 'react';
 import TripsPane from './trips_pane';
-import ReviewsPane from './reviews_pane';
+import ReviewsPane from '../reviews/reviews_pane';
 
 class UserPanes extends React.Component {
   constructor(props) {

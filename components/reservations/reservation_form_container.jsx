@@ -1,8 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import ReservationForm from './reservation_form';
-import { createReservation } from '../actions/reservation_actions';
-import { openModal } from '../actions/modal_actions';
+import { createReservation } from '../../actions/reservation_actions';
+import { openModal } from '../../actions/modal_actions';
 
 const mapStateToProps = state => {
   return {

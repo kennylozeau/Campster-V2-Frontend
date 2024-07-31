@@ -1,16 +1,16 @@
 import React from 'react';
 import { Route, Link } from 'react-router-dom';
 import { AuthRoute, ProtectedRoute} from '../util/route_util';
-import LoginFormContainer from './login_form_container';
-import NavBarContainer from './navbar_container';
+import LoginFormContainer from './auth/login_form_container';
+import NavBarContainer from './navbar/navbar_container';
 import Modal from './modal';
-import CampsiteIndexContainer from './campsite_index_container';
-import CampsiteShowContainer from './campsite_show_container';
-import Footer from './footer';
-import CampsiteMap from './campsite_map';
-import UserProfileContainer from './user_profile_container';
-import SearchBarContainer from './search_bar_container';
-import DiscoverContainer from './discover_container';
+import CampsiteIndexContainer from './campsite_index/campsite_index_container';
+import CampsiteShowContainer from './campsite_show/campsite_show_container';
+import Footer from './footer/footer';
+import CampsiteMap from './campsite_show/campsite_map';
+import UserProfileContainer from './user_profile/user_profile_container';
+import SearchBarContainer from './search/search_bar_container';
+import DiscoverContainer from './discover/discover_container';
 
 const App = (props) => {
   return(

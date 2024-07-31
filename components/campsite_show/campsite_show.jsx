@@ -1,7 +1,7 @@
 import React from 'react';
 import CampsiteMap from './campsite_map';
-import ReservationFormContainer from './reservation_form_container';
-import ReviewIndexContainer from './review_index_container';
+import ReservationFormContainer from '../reservations/reservation_form_container';
+import ReviewIndexContainer from '../reviews/review_index_container';
 import Carousel from './carousel';
 
 

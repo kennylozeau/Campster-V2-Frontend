@@ -1,10 +1,10 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import UserProfile from './user_profile';
-import { fetchReservations } from '../actions/reservation_actions';
-import { fetchCampsites } from '../actions/campsite_actions';
-import { openModal } from '../actions/modal_actions';
-import { fetchUser } from '../actions/session_actions';
+import { fetchReservations } from '../../actions/reservation_actions';
+import { fetchCampsites } from '../../actions/campsite_actions';
+import { openModal } from '../../actions/modal_actions';
+import { fetchUser } from '../../actions/session_actions';
 
 const mapStateToProps = (state, ownProps) => {
   return {

@@ -1,6 +1,6 @@
 import React from 'react'
 import queryString from 'query-string';
-import MarkerManager from '../util/marker_manager';
+import MarkerManager from '../../util/marker_manager';
 
 class DiscoverMap extends React.Component {
   constructor(props) {

@@ -1,10 +1,10 @@
 import React from 'react';
 import { closeModal } from '../actions/modal_actions';
 import { connect } from 'react-redux';
-import LoginFormContainer from './login_form_container';
-import SignupFormContainer from './signup_form_container';
-import DemoLoginContainer from './demo_login_container';
-import ReviewFormContainer from './review_form_container';
+import LoginFormContainer from './auth/login_form_container';
+import SignupFormContainer from './auth/signup_form_container';
+import DemoLoginContainer from './auth/demo_login_container';
+import ReviewFormContainer from './reviews/review_form_container';
 import { clearErrors } from '../actions/session_actions';
 
 class Modal extends React.Component {

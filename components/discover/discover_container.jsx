@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { updateBounds } from '../actions/filter_actions';
+import { updateBounds } from '../../actions/filter_actions';
 import Discover from './discover';
 
 const mapStateToProps = (state, ownProps) => {
