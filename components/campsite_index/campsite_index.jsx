@@ -1,6 +1,8 @@
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+
 import CampsiteIndexItem from './campsite_index_item';
-import React from 'react';
-import { useSelector } from 'react-redux';
+import { fetchCampsites } from '../../util/campsite_api_util';
 
 /**
  * The `CampsiteIndex` component renders a list of campsite items based on the campsites stored in the
@@ -11,7 +13,18 @@ import { useSelector } from 'react-redux';
  */
 const CampsiteIndex = () => {
   const campsites = useSelector(state => state.entities.campsites);
+  const dispatch = useDispatch()
 
+  useEffect(() => {
+    console.warn('NO-DATA CHECK!\nCampsite index was converted to hook without data to check it!\nThus you should double check it when we have data!')
+    const dispatchFetch = async () => {
+      dispatch(await fetchCampsites())
+    }
+
+    dispatchFetch();
+  }, [])
+
+  // creates the array list for index
   const campsiteList = Object.values(campsites).map(campsite => {
     return <CampsiteIndexItem key={campsite.id} campsite={campsite} />
   });
