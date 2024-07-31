@@ -5,7 +5,7 @@ import LoginFormContainer from './auth/login_form_container';
 import NavBarContainer from './navbar/navbar_container';
 import Modal from './modal';
 import CampsiteIndexContainer from './campsite_index/campsite_index_container';
-import CampsiteShowContainer from './campsite_show/campsite_show_container';
+import CampsiteShow from './campsite_show/campsite_show';
 import Footer from './footer/footer';
 import CampsiteMap from './campsite_show/campsite_map';
 import UserProfileContainer from './user_profile/user_profile_container';
@@ -22,7 +22,7 @@ const App = (props) => {
       {/* <Route path="/discover" component={CampsiteIndexContainer} /> */}
       <Route exact path="/" component={SearchBarContainer} />
       <Route exact path="/" component={CampsiteIndexContainer} />
-      <Route exact path="/campsites/:campsiteId" component={CampsiteShowContainer} />
+      <Route exact path="/campsites/:campsiteId" component={CampsiteShow} />
       <ProtectedRoute path="/users/:userId" component={UserProfileContainer} />
       <Route path="/discover/" component={DiscoverContainer} />
       {/* <CampsiteMap /> */}

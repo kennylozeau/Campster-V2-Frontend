@@ -1,4 +1,41 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+
+// function CampsiteMap(props) {
+//   useEffect(() => {
+//     const { latitude, longitude } = props.campsite;
+//     const mapOptions = {
+//       center: { lat: latitude, lng: longitude },
+//       zoom: 16,
+//       streetViewControl: false,
+//       fullscreenControl: false,
+//       mapTypeControl: false,
+//       scaleControl: true,
+//       mapTypeId: 'terrain',
+//       scrollwheel: false
+//     };
+
+//     const map = new google.maps.Map(mapNode, mapOptions);
+
+//     const marker = new google.maps.Marker({
+//       position: { lat: latitude, lng: longitude },
+//       icon: {
+//         path: google.maps.SymbolPath.CIRCLE,
+//         scale: 75,
+//         strokeColor: "#40D9AC",
+//         strokeWeight: 2,
+//         fillColor: "#40D9AC",
+//         fillOpacity: 0.3
+//       },
+//       map: map
+//     });
+//   }, [])
+
+//   return (
+//     <div className={props.mapType} ref={ map => mapNode = map }>
+
+//     </div>
+//   )
+// }
 
 class CampsiteMap extends React.Component {
   constructor(props) {
