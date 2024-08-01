@@ -4,7 +4,7 @@ import { Link, Route } from 'react-router-dom';
 import CampsiteIndex from './campsite_index/campsite_index';
 import CampsiteMap from './campsite_show/campsite_map';
 import CampsiteShowContainer from './campsite_show/campsite_show_container';
-import DiscoverContainer from './discover/discover_container';
+import Discover from './discover/discover';
 import Footer from './footer/footer';
 import LoginFormContainer from './auth/login_form_container';
 import Modal from './modal';
@@ -25,7 +25,7 @@ const App = (props) => {
       <Route exact path="/" component={CampsiteIndex} />
       <Route exact path="/campsites/:campsiteId" component={CampsiteShowContainer} />
       <ProtectedRoute path="/users/:userId" component={UserProfileContainer} />
-      <Route path="/discover/" component={DiscoverContainer} />
+      <Route path="/discover/" component={Discover} />
       {/* <CampsiteMap /> */}
       <div className="footer-container"><Footer /></div>
     </>
